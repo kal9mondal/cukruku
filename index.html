@@ -61,8 +61,80 @@
 			</div>
 		</section>
 
+		<section class="info">
+			<div class="contact-form">
+				<div class="topic-title">
+					<h2>Contact Us</h2>
+				</div>
+				<form id="contact" method="post" onsubmit="return postToGoogle();">
+					<div class="form-item">
+						<label for="name" class="question">Name: </label>
+						<input
+							type="text"
+							name="entry.1879304393"
+							id="name"
+							class="answer"
+							placeholder="[Required]"
+							required
+						/>
+					</div>
+					<div class="form-item">
+						<label for="mobile" class="question">Mobile No: </label>
+						<input
+							type="number"
+							name="entry.1872128658"
+							id="mobile"
+							class="answer"
+							placeholder="[Required]"
+							required
+						/>
+					</div>
+					<div class="form-item">
+						<label for="email" class="question">Email: </label>
+						<input
+							type="email"
+							name="entry.1309921460"
+							id="email"
+							class="answer"
+						/>
+					</div>
+					<div class="form-item">
+						<label for="city" class="question">City: </label>
+						<input
+							type="text"
+							name="entry.1957350639"
+							id="city"
+							class="answer"
+						/>
+					</div>
+					<div class="form-item">
+						<label for="state" class="question">State/UT: </label>
+						<input
+							type="text"
+							name="entry.967668950"
+							id="state"
+							class="answer"
+						/>
+					</div>
+					<div class="form-item">
+						<label for="message" class="question">Message: </label>
+						<textarea
+							name="entry.2061827451"
+							id="message"
+							cols="30"
+							rows="10"
+							class="answer"
+						></textarea>
+					</div>
+					<button type="submit" id="contact-submit">Submit</button>
+				</form>
+			</div>
+		</section>
+
 		<!-- Scripts -->
 		<script src="dist/scripts/navbar.js"></script>
 		<script src="dist/scripts/carousel.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="dist/scripts/contact.js"></script>
 	</body>
 </html>

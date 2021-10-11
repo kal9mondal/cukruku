@@ -132,4 +132,62 @@ section.hero .carousel__button--right {
   right: 0.5rem;
 }
 
+section.info .contact-form {
+  margin: 2rem 1rem;
+}
+section.info .contact-form form#contact .form-item {
+  padding: 0.25rem 0;
+}
+section.info .contact-form form#contact .form-item .question {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+section.info .contact-form form#contact .form-item .answer {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  line-height: 1.25rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  background: #ffaa00;
+  color: black;
+}
+section.info .contact-form form#contact .form-item .answer::placeholder {
+  color: black;
+  opacity: 0.8;
+}
+section.info .contact-form form#contact .form-item .answer:focus {
+  background: #cc8800;
+  color: white;
+}
+section.info .contact-form form#contact .form-item .answer:focus::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+section.info .contact-form form#contact .form-item input[type=text],
+section.info .contact-form form#contact .form-item input[type=email],
+section.info .contact-form form#contact .form-item input[type=number] {
+  height: 2.5rem;
+}
+section.info .contact-form form#contact .form-item textarea {
+  height: 10rem;
+  resize: none;
+}
+section.info .contact-form form#contact button#contact-submit {
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #ffaa00;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+section.info .contact-form form#contact button#contact-submit:hover, section.info .contact-form form#contact button#contact-submit:active {
+  background: #cc8800;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
