@@ -7,7 +7,6 @@ const toggleNavList = () => {
 	navList.classList.toggle("active");
 	header.classList.toggle("fixed");
 };
-console.log(header);
 
 menuButton.addEventListener("click", toggleNavList);
 
