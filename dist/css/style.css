@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -10,6 +11,73 @@ html {
   box-sizing: inherit;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: #333333;
+  width: 100%;
+  height: 4rem;
+  padding: 0 2rem;
+}
+header.fixed {
+  position: fixed;
+}
+header .logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 4rem;
+  text-transform: uppercase;
+  float: left;
+}
+header nav {
+  float: right;
+}
+header nav .menu {
+  float: right;
+  font-size: 2rem;
+  line-height: 4rem;
+  border: none;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+header nav .menu:hover {
+  color: #cc8800;
+}
+header nav .menu:active {
+  color: #ffbb33;
+}
+header nav ul {
+  position: fixed;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #333333;
+  font-size: 2rem;
+  display: none;
+}
+header nav ul.active {
+  display: block;
+}
+header nav ul li {
+  margin: 2rem 0;
+}
+header nav ul li a {
+  color: white;
+}
+header nav ul li a:hover {
+  color: #cc8800;
+}
+header nav ul li a:active {
+  color: #ffbb33;
 }
 
 /*# sourceMappingURL=style.css.map */

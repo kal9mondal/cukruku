@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
 html {
 	box-sizing: border-box;
 }
@@ -10,4 +12,89 @@ html {
 	box-sizing: inherit;
 	text-decoration: none;
 	list-style: none;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+// Variables
+$primary-color: hsl(40, 100%, 50%);
+$primary-dark: hsl(40, 100%, 40%);
+$primary-light: hsl(40, 100%, 60%);
+$secondary-color: hsl(0, 0%, 20%);
+$white-color: hsl(0, 0%, 100%);
+$black-color: hsl(0, 0%, 0%);
+
+// Header
+header {
+	background: $secondary-color;
+	width: 100%;
+	height: 4rem;
+	padding: 0 2rem;
+
+	&.fixed {
+		position: fixed;
+	}
+
+	.logo {
+		color: $white-color;
+		font-size: 2rem;
+		font-weight: 200;
+		line-height: 4rem;
+		text-transform: uppercase;
+		float: left;
+	}
+
+	nav {
+		float: right;
+
+		.menu {
+			float: right;
+			font-size: 2rem;
+			line-height: 4rem;
+			border: none;
+			color: $white-color;
+			background: transparent;
+			cursor: pointer;
+
+			&:hover {
+				color: $primary-dark;
+			}
+			&:active {
+				color: $primary-light;
+			}
+		}
+
+		ul {
+			position: fixed;
+			margin-top: 4rem;
+			padding-top: 4rem;
+			text-align: center;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: $secondary-color;
+			font-size: 2rem;
+			display: none;
+
+			&.active {
+				display: block;
+			}
+
+			li {
+				margin: 2rem 0;
+				a {
+					color: $white-color;
+
+					&:hover {
+						color: $primary-dark;
+					}
+					&:active {
+						color: $primary-light;
+					}
+				}
+			}
+		}
+	}
 }
