@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
+// Variables
+$primary-color: hsl(40, 100%, 50%);
+$primary-dark: hsl(40, 100%, 40%);
+$primary-light: hsl(40, 100%, 60%);
+$secondary-color: hsl(0, 0%, 20%);
+$white-color: hsl(0, 0%, 100%);
+$black-color: hsl(0, 0%, 0%);
+$carousel-button: hsla(0, 0%, 100%, 0.5);
+
 html {
 	box-sizing: border-box;
 }
@@ -16,16 +25,8 @@ html {
 
 body {
 	font-family: "Poppins", sans-serif;
+	background: $primary-light;
 }
-
-// Variables
-$primary-color: hsl(40, 100%, 50%);
-$primary-dark: hsl(40, 100%, 40%);
-$primary-light: hsl(40, 100%, 60%);
-$secondary-color: hsl(0, 0%, 20%);
-$white-color: hsl(0, 0%, 100%);
-$black-color: hsl(0, 0%, 0%);
-$carousel-button: hsla(0, 0%, 100%, 0.5);
 
 // Header
 header {
