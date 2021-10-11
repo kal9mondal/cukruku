@@ -22,6 +22,7 @@ header {
   width: 100%;
   height: 4rem;
   padding: 0 2rem;
+  z-index: 10;
 }
 header.fixed {
   position: fixed;
@@ -78,6 +79,56 @@ header nav ul li a:hover {
 }
 header nav ul li a:active {
   color: #ffbb33;
+}
+
+section.hero .carousel {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+section.hero .carousel__track-container {
+  height: 100%;
+  position: relative;
+}
+section.hero .carousel__track {
+  position: relative;
+  height: 100%;
+  transition: 0.25s ease-in-out;
+}
+section.hero .carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+section.hero .carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.hero .carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+section.hero .carousel__button:hover {
+  color: #cc8800;
+}
+section.hero .carousel__button:active {
+  color: #ffbb33;
+}
+section.hero .carousel__button--left {
+  left: 0.5rem;
+}
+section.hero .carousel__button--right {
+  right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
