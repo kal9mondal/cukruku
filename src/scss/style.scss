@@ -26,6 +26,7 @@ html {
 body {
 	font-family: "Poppins", sans-serif;
 	background: $primary-light;
+	color: $white-color;
 }
 
 // Header
@@ -168,16 +169,17 @@ section.hero {
 section.info {
 	.contact-form {
 		margin: 2rem 1rem;
+		color: $black-color;
 
 		form#contact {
 			.form-item {
 				padding: 0.25rem 0;
 
-				.question {
+				.form-label {
 					font-size: 1.2rem;
 					font-weight: 600;
 				}
-				.answer {
+				.form-input {
 					// All Common Styles here
 					width: 100%;
 					padding: 0.25rem 0.5rem;
@@ -233,4 +235,43 @@ section.info {
 			}
 		}
 	}
+
+	.faq {
+		margin: 2rem 1rem;
+		color: $black-color;
+
+		&-item {
+			margin: 1rem 0;
+			padding: 0.25rem;
+			background: $primary-color;
+			border-radius: 0.25rem;
+
+			.question {
+				font-size: 1.2rem;
+				font-weight: 600;
+				cursor: pointer;
+			}
+
+			.answer {
+				font-size: 0.9rem;
+				font-weight: 400;
+				background: $primary-light;
+				margin-top: 0.25rem;
+				padding: 0.2rem;
+				border-radius: 0.2rem;
+				display: none;
+
+				&.active {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+// Topic Title
+.topic-title {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: $black-color;
 }
