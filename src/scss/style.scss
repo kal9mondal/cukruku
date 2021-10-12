@@ -285,6 +285,38 @@ section.info {
 	}
 }
 
+footer {
+	background: $secondary-color;
+	padding: 0 2rem;
+	margin-top: 4rem;
+	width: 100%;
+	height: 4rem;
+
+	.logo {
+		width: 5rem;
+		height: 4rem;
+		position: relative;
+		top: -2rem;
+		left: 50%;
+		transform: translateX(-50%);
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 25%;
+		}
+	}
+
+	.copyright {
+		position: relative;
+		top: -2rem;
+		margin-top: 0.25rem;
+		text-align: center;
+		text-transform: capitalize;
+	}
+}
+
 // Topic Title
 .topic-title {
 	font-size: 1.2rem;
