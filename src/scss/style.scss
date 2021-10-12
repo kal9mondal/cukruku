@@ -8,6 +8,7 @@ $secondary-color: hsl(0, 0%, 20%);
 $white-color: hsl(0, 0%, 100%);
 $black-color: hsl(0, 0%, 0%);
 $carousel-button: hsla(0, 0%, 100%, 0.5);
+$topic-margin: 2rem 1rem;
 
 html {
 	box-sizing: border-box;
@@ -163,12 +164,27 @@ section.hero {
 			}
 		}
 	}
+
+	.usp {
+		margin: $topic-margin;
+
+		&-item {
+			color: $black-color;
+			background: $primary-color;
+			font-size: 1.2rem;
+			font-weight: 600;
+			margin: 0.5rem 0;
+			padding: 0.5rem;
+			border: 0.2rem solid $primary-dark;
+			border-radius: 0.5rem;
+		}
+	}
 }
 
 // Info Section
 section.info {
 	.contact-form {
-		margin: 2rem 1rem;
+		margin: $topic-margin;
 		color: $black-color;
 
 		form#contact {
@@ -237,7 +253,7 @@ section.info {
 	}
 
 	.faq {
-		margin: 2rem 1rem;
+		margin: $topic-margin;
 		color: $black-color;
 
 		&-item {
@@ -274,4 +290,6 @@ section.info {
 	font-size: 1.2rem;
 	font-weight: 600;
 	color: $black-color;
+	text-transform: uppercase;
+	text-decoration: 0.2rem underline $black-color;
 }
