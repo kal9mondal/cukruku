@@ -16,6 +16,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background: #ffbb33;
+  color: white;
 }
 
 header {
@@ -134,15 +135,16 @@ section.hero .carousel__button--right {
 
 section.info .contact-form {
   margin: 2rem 1rem;
+  color: black;
 }
 section.info .contact-form form#contact .form-item {
   padding: 0.25rem 0;
 }
-section.info .contact-form form#contact .form-item .question {
+section.info .contact-form form#contact .form-item .form-label {
   font-size: 1.2rem;
   font-weight: 600;
 }
-section.info .contact-form form#contact .form-item .answer {
+section.info .contact-form form#contact .form-item .form-input {
   width: 100%;
   padding: 0.25rem 0.5rem;
   margin: 0.25rem 0;
@@ -155,15 +157,15 @@ section.info .contact-form form#contact .form-item .answer {
   background: #ffaa00;
   color: black;
 }
-section.info .contact-form form#contact .form-item .answer::placeholder {
+section.info .contact-form form#contact .form-item .form-input::placeholder {
   color: black;
   opacity: 0.8;
 }
-section.info .contact-form form#contact .form-item .answer:focus {
+section.info .contact-form form#contact .form-item .form-input:focus {
   background: #cc8800;
   color: white;
 }
-section.info .contact-form form#contact .form-item .answer:focus::placeholder {
+section.info .contact-form form#contact .form-item .form-input:focus::placeholder {
   color: white;
   opacity: 0.8;
 }
@@ -188,6 +190,39 @@ section.info .contact-form form#contact button#contact-submit {
 section.info .contact-form form#contact button#contact-submit:hover, section.info .contact-form form#contact button#contact-submit:active {
   background: #cc8800;
   color: white;
+}
+section.info .faq {
+  margin: 2rem 1rem;
+  color: black;
+}
+section.info .faq-item {
+  margin: 1rem 0;
+  padding: 0.25rem;
+  background: #ffaa00;
+  border-radius: 0.25rem;
+}
+section.info .faq-item .question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+section.info .faq-item .answer {
+  font-size: 0.9rem;
+  font-weight: 400;
+  background: #ffbb33;
+  margin-top: 0.25rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  display: none;
+}
+section.info .faq-item .answer.active {
+  display: block;
+}
+
+.topic-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
