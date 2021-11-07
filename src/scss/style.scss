@@ -3,7 +3,7 @@
 // Variables
 $primary-color: hsl(40, 100%, 50%);
 $primary-dark: hsl(40, 100%, 40%);
-$primary-light: hsl(40, 100%, 60%);
+$primary-light: hsl(40, 100%, 80%);
 $secondary-color: hsl(0, 0%, 20%);
 $white-color: hsl(0, 0%, 100%);
 $black-color: hsl(0, 0%, 0%);
@@ -290,8 +290,8 @@ footer {
 	padding: 0 2rem;
 	margin-top: 4rem;
 	width: 100%;
-	// height: 4rem; Breaks on Mobile.
-  
+	// height: 5rem; // Breaks on Mobile.
+
 	.logo {
 		width: 5rem;
 		height: 4rem;
@@ -310,10 +310,44 @@ footer {
 
 	.copyright {
 		position: relative;
-		top: -2rem;
-		margin-top: 0.25rem;
+		// top: -2rem;
+		// margin-top: 0.25rem;
+		padding-bottom: 0.25rem;
 		text-align: center;
 		text-transform: capitalize;
+	}
+}
+
+// CTA
+.cta {
+	color: $black-color;
+	background: $primary-color;
+	margin: $topic-margin;
+	border: $primary-dark 0.25rem solid;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-align: center;
+
+	&-btn {
+		padding: 0.5rem 0.75rem;
+		margin-top: 0.5rem;
+		border: none;
+		border-radius: 0.25rem;
+		background: $primary-dark;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+
+		a {
+			color: $black-color;
+		}
+
+		&:hover,
+		&:active {
+			background: $primary-dark;
+			a {
+				color: $white-color;
+			}
+		}
 	}
 }
 
