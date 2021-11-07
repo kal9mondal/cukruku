@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #ffbb33;
+  background: #ffdd99;
   color: white;
 }
 
@@ -53,7 +53,7 @@ header nav .menu:hover {
   color: #cc8800;
 }
 header nav .menu:active {
-  color: #ffbb33;
+  color: #ffdd99;
 }
 header nav ul {
   position: fixed;
@@ -80,7 +80,7 @@ header nav ul li a:hover {
   color: #cc8800;
 }
 header nav ul li a:active {
-  color: #ffbb33;
+  color: #ffdd99;
 }
 
 section.hero .carousel {
@@ -124,7 +124,7 @@ section.hero .carousel__button:hover {
   color: #cc8800;
 }
 section.hero .carousel__button:active {
-  color: #ffbb33;
+  color: #ffdd99;
 }
 section.hero .carousel__button--left {
   left: 0.5rem;
@@ -222,7 +222,7 @@ section.info .faq-item .question {
 section.info .faq-item .answer {
   font-size: 0.9rem;
   font-weight: 400;
-  background: #ffbb33;
+  background: #ffdd99;
   margin-top: 0.25rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
@@ -254,10 +254,37 @@ footer .logo img {
 }
 footer .copyright {
   position: relative;
-  top: -2rem;
-  margin-top: 0.25rem;
+  padding-bottom: 0.25rem;
   text-align: center;
   text-transform: capitalize;
+}
+
+.cta {
+  color: black;
+  background: #ffaa00;
+  margin: 2rem 1rem;
+  border: #cc8800 0.25rem solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.cta-btn {
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #cc8800;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.cta-btn a {
+  color: black;
+}
+.cta-btn:hover, .cta-btn:active {
+  background: #cc8800;
+}
+.cta-btn:hover a, .cta-btn:active a {
+  color: white;
 }
 
 .topic-title {
